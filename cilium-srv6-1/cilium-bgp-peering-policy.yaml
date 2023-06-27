@@ -1,9 +1,9 @@
 apiVersion: "cilium.io/v2alpha1"
 kind: CiliumBGPPeeringPolicy
-metadata: # kpt-merge: /pe0
-  name: pe0
+metadata: # kpt-merge: /pe1
+  name: pe1
   annotations:
-    internal.kpt.dev/upstream-identifier: 'cilium.io|CiliumBGPPeeringPolicy|default|pe0'
+    internal.kpt.dev/upstream-identifier: 'cilium.io|CiliumBGPPeeringPolicy|default|pe1'
 spec:
   nodeSelector:
     matchLabels:
