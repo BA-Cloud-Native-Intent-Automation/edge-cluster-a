@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: DaemonSet
-metadata: # kpt-merge: /netshoot-vrf0
-  name: netshoot-vrf0
+metadata: # kpt-merge: /netshoot-vrf1
+  name: netshoot-vrf1
   annotations:
     internal.kpt.dev/upstream-identifier: 'apps|DaemonSet|default|netshoot-vrf0'
   namespace: netshoot-vrf1
@@ -9,12 +9,12 @@ spec:
   selector:
     matchLabels:
       app: netshoot
-      vrf: vrf0
+      vrf: vrf1
   template:
     metadata:
       labels:
         app: netshoot
-        vrf: vrf0
+        vrf: vrf1
     spec:
       tolerations:
       - key: node-role.kubernetes.io/master
